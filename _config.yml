@@ -76,5 +76,5 @@ duoshuo_shortname: Rafa
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:rafa-li/Rafa.github.io.git
+  repo: https://github.com/rafa-li/rafa.github.io.git
   branch: master
