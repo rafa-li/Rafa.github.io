@@ -81,7 +81,7 @@
     TagCloud._getConfig = function (config) {
         var defaultConfig = {      //默认值
             fontsize: 16,       //基本字体大小, 单位px
-            radius: 60,         //滚动半径, 单位px
+            radius: 120,         //滚动半径, 单位px
             mspeed: "normal",   //滚动最大速度, 取值: slow, normal(默认), fast
             ispeed: "normal",   //滚动初速度, 取值: slow, normal(默认), fast
             direction: 135,     //初始滚动方向, 取值角度(顺时针360): 0对应top, 90对应left, 135对应right-bottom(默认)...
