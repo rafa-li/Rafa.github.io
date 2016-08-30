@@ -1551,7 +1551,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fbb;
+  background: #baf1ac;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2459,4 +2459,13 @@ hr {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+}
+.canvas-header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  z-index: 1;
+  background-image: url("../images/canvas-bg.jpg");
+  background-position: center bottom;
 }
