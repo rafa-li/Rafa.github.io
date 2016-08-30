@@ -1551,7 +1551,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f969b4;
+  background: #fbb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2429,7 +2429,7 @@ hr {
   }
 }
 .tag-box {
-  width: 900px;
+  width: auto;
   height: 500px;
 }
 .tag-cloud-tags {
