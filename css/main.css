@@ -1558,7 +1558,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0a4a1c;
+  background: #fff9ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2474,7 +2474,7 @@ hr {
   width: 100%;
   overflow: hidden;
   background-size: cover;
-  z-index: 1;
+  z-index: -1;
   background-image: url("../images/canvas-bg.jpg");
   background-position: center bottom;
   background-attachment: fixed;
