@@ -878,6 +878,13 @@ pre .javascript .function {
   height: 3px;
   background: #222;
 }
+#header {
+  position: absolut;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(255,255,255,0.2);
+}
 .site-meta {
   margin: 0;
   text-align: left;
@@ -1551,7 +1558,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #baf1ac;
+  background: #0a4a1c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2461,11 +2468,14 @@ hr {
   border-radius: 2px;
 }
 .canvas-header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   overflow: hidden;
   background-size: cover;
   z-index: 1;
   background-image: url("../images/canvas-bg.jpg");
   background-position: center bottom;
+  background-attachment: fixed;
 }

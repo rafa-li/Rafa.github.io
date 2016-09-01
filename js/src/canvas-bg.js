@@ -6,20 +6,19 @@
     initHeader();
     addListeners();
 
+// 设置画布的高度宽度为浏览器窗口的宽高
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
         target = {x: 0, y: height};
-
-        largeHeader = document.getElementById('canvas-header');
-        largeHeader.style.height = height+'px';
-
+        // largeHeader = document.getElementById('canvas-header');
+        // largeHeader.style.height = height+'px';
         canvas = document.getElementById('canvas-bg');
+        ctx = canvas.getContext('2d');
         canvas.width = width;
         canvas.height = height;
-        ctx = canvas.getContext('2d');
 
-        // create particles
+        // 创建颗粒
         circles = [];
         for(var x = 0; x < width*0.5; x++) {
             var c = new Circle();
@@ -42,7 +41,7 @@
     function resize() {
         width = window.innerWidth;
         height = window.innerHeight;
-        largeHeader.style.height = height+'px';
+        s
         canvas.width = width;
         canvas.height = height;
     }
@@ -56,6 +55,12 @@
         }
         requestAnimationFrame(animate);
     }
+/*****************************************
+*循环调用window API：
+*   1、requestAnimFrame(function (){});//根据设备的性能来确定循环调用的时间间隔
+*   2、setTimeout(function(){},time); //先等待一次time的时间，再执行function()，然后循环
+*   3、setInterval(function(){},time);//先执行function(),再循环
+*******************************************/
 
     // Canvas manipulation
     function Circle() {
@@ -65,7 +70,7 @@
         (function() {
             _this.pos = {};
             init();
-            console.log(_this);
+        //    console.log(_this);
         })();
 
         function init() {
@@ -76,7 +81,7 @@
             _this.velocity = Math.random();
         }
 
-        this.draw = function() {
+        function draw(){
             if(_this.alpha <= 0) {
                 init();
             }
