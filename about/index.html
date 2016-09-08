@@ -88,20 +88,41 @@
 
 <meta name="description" content="正在建设中……
 不如我们先来玩玩小游戏……
-俄罗斯方块">
+
+
+
+
+        (function(i, s, o, g, r, a, m) {
+            i[&apos;GoogleAnalyticsObject&apos;] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(argu">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://rafa-li.github.io/about/index.html">
 <meta property="og:site_name" content="Rafa's Blog">
 <meta property="og:description" content="正在建设中……
 不如我们先来玩玩小游戏……
-俄罗斯方块">
-<meta property="og:updated_time" content="2016-09-08T14:39:08.000Z">
+
+
+
+
+        (function(i, s, o, g, r, a, m) {
+            i[&apos;GoogleAnalyticsObject&apos;] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(argu">
+<meta property="og:updated_time" content="2016-09-08T17:13:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
 <meta name="twitter:description" content="正在建设中……
 不如我们先来玩玩小游戏……
-俄罗斯方块">
+
+
+
+
+        (function(i, s, o, g, r, a, m) {
+            i[&apos;GoogleAnalyticsObject&apos;] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(argu">
 
 
 
@@ -294,7 +315,127 @@
     
       <p></p><h1>正在建设中……<h1><p></p>
 <p></p><h1>不如我们先来玩玩小游戏……</h1><p></p>
-<p><hr><br><a herf="../games/B-Trix/B-Trix.html">俄罗斯方块</a><br></p>
+<p><hr></p>
+<p><link rel="stylesheet" href="assets/css/style.css"></p>
+<p><link rel="stylesheet" href="blockrain.css"></p>
+<script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-21195039-3', 'aerolab.github.io');
+        ga('require', 'displayfeatures');
+        ga('require', 'linkid', 'linkid.js');
+        ga('send', 'pageview');
+    </script>
+    <section id="examples">
+      <header>
+          <h1>Try it yourself!</h1>
+      </header>
+      <article id="example-slider">
+          <div class="example">
+              <div class="theme">theme: <strong>"vim"</strong></div>
+              <div class="instructions">
+                  Use only arrows
+                  <div class="keyboard">
+                      <div class="key key-up"></div>
+                      <div class="key key-left"></div>
+                      <div class="key key-down"></div>
+                      <div class="key key-right"></div>
+                  </div>
+              </div>
+              <div class="game" id="tetris-demo"></div>
+          </div>
+          <div class="buttons">
+              <a href="" class="btn btn-prev">Previous</a>
+              <a href="" class="btn btn-next">Next</a>
+          </div>
+      </article>
+  </section>
+  <script src="jquery-1.11.1.min.js"></script>
+  <script src="blockrain.jquery.js"></script>
+  <script>
+      var versusSpeed = 100;
+
+      var $versus1 = $('#tetris-versus-1 .game').blockrain({
+          autoplay: true,
+          autoplayRestart: true,
+          speed: versusSpeed,
+          onGameOver: function() {
+              $versus1.blockrain('restart');
+              $versus2.blockrain('restart');
+              var $score = $versus2.parent().find('.score');
+              $score.text(parseInt($score.text()) + 1);
+          }
+      });
+      var $versus2 = $('#tetris-versus-2 .game').blockrain({
+          autoplay: true,
+          autoplayRestart: true,
+          speed: versusSpeed,
+          onGameOver: function() {
+              $versus1.blockrain('restart');
+              $versus2.blockrain('restart');
+              var $score = $versus1.parent().find('.score');
+              $score.text(parseInt($score.text()) + 1);
+          }
+      });
+
+
+      var $demo = $('#tetris-demo').blockrain({
+          speed: 20,
+          theme: 'vim',
+          onStart: function() {
+              ga('send', 'event', 'tetris', 'started');
+          },
+          onLine: function() {
+              ga('send', 'event', 'tetris', 'line');
+          },
+          onGameOver: function(score) {
+              ga('send', 'event', 'tetris', 'over', score);
+          }
+      });
+
+      $('#example-slider').find('.btn-next').click(function(event) {
+          event.preventDefault();
+          switchDemoTheme(true);
+      });
+      $('#example-slider').find('.btn-prev').click(function(event) {
+          event.preventDefault();
+          switchDemoTheme(false);
+      });
+
+      function switchDemoTheme(next) {
+
+          var themes = Object.keys(BlockrainThemes);
+
+          var currentTheme = $demo.blockrain('theme');
+          var currentIx = themes.indexOf(currentTheme);
+
+          if (next) {
+              currentIx++;
+          } else {
+              currentIx--;
+          }
+
+          if (currentIx >= themes.length) {
+              currentIx = 0;
+          }
+          if (currentIx < 0) {
+              currentIx = themes.length - 1;
+          }
+
+          $demo.blockrain('theme', themes[currentIx]);
+          $('#example-slider .theme strong').text('"' + themes[currentIx] + '"');
+      }
+  </script>
 </h1></h1>
     
   </div>
