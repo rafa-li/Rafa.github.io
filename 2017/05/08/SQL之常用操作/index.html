@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="SQL," />
 
 
 
@@ -86,15 +86,31 @@
 
 
 
-<meta name="description" content="Youth is not a time of life, it is a state of mind.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Rafa's Blog">
-<meta property="og:url" content="http://rafa-li.github.io/tags/Python/index.html">
+<meta name="description" content="问题：常用SQL查询，放在这里总结一下，吃过亏，吃过亏啊，放在这里长记性。
+1.增
+1.1【插入单行】insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)
+例：insert into Strdents (姓名,性别,出生日期) values
+
+1.2【将现有表数据添加到一个已有表】insert into &amp;lt;已有的新表&amp;gt; (列名) select &amp;lt;原表">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQL之常用操作">
+<meta property="og:url" content="http://rafa-li.github.io/2017/05/08/SQL之常用操作/index.html">
 <meta property="og:site_name" content="Rafa's Blog">
-<meta property="og:description" content="Youth is not a time of life, it is a state of mind.">
+<meta property="og:description" content="问题：常用SQL查询，放在这里总结一下，吃过亏，吃过亏啊，放在这里长记性。
+1.增
+1.1【插入单行】insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)
+例：insert into Strdents (姓名,性别,出生日期) values
+
+1.2【将现有表数据添加到一个已有表】insert into &amp;lt;已有的新表&amp;gt; (列名) select &amp;lt;原表">
+<meta property="og:updated_time" content="2017-05-08T07:49:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Rafa's Blog">
-<meta name="twitter:description" content="Youth is not a time of life, it is a state of mind.">
+<meta name="twitter:title" content="SQL之常用操作">
+<meta name="twitter:description" content="问题：常用SQL查询，放在这里总结一下，吃过亏，吃过亏啊，放在这里长记性。
+1.增
+1.1【插入单行】insert [into] &amp;lt;表名&amp;gt; (列名) values (列值)
+例：insert into Strdents (姓名,性别,出生日期) values
+
+1.2【将现有表数据添加到一个已有表】insert into &amp;lt;已有的新表&amp;gt; (列名) select &amp;lt;原表">
 
 
 
@@ -115,9 +131,9 @@
 
 
 
-  <link rel="canonical" href="http://rafa-li.github.io/tags/Python/"/>
+  <link rel="canonical" href="http://rafa-li.github.io/2017/05/08/SQL之常用操作/"/>
 
-  <title> 标签: Python | Rafa's Blog </title>
+  <title> SQL之常用操作 | Rafa's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -138,7 +154,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -377,46 +393,301 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        Python
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                SQL之常用操作
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-05-08T15:17:46+08:00" content="2017-05-08">
+              2017-05-08
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/05/08/SQL之常用操作/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/08/SQL之常用操作/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h1 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h1><p>常用SQL查询，放在这里总结一下，吃过亏，吃过亏啊，放在这里长记性。</p>
+<h3 id="1-增"><a href="#1-增" class="headerlink" title="1.增"></a>1.增</h3><ul>
+<li>1.1【插入单行】<br>insert [into] &lt;表名&gt; (列名) values (列值)<pre>
+例：insert into Strdents (姓名,性别,出生日期) values
+</pre></li>
+<li>1.2【将现有表数据添加到一个已有表】<br>insert into &lt;已有的新表&gt; (列名) select &lt;原表列名&gt; from &lt;原表名&gt;<pre>
+例：insert into tongxunlu ('姓名','地址','电子邮件')
+select name,address,email
+from Strdents
+</pre></li>
+<li>1.3【直接拿现有表数据创建一个新表并填充】<br>select &lt;新建表列名&gt; into &lt;新建表名&gt; from &lt;源表名&gt;<pre>
+例：select name,address,email into tongxunlu from strdents
+</pre></li>
+<li>1.4【使用union关键字合并数据进行插入多行】<br>insert &lt;表名&gt; &lt;列名&gt; select &lt;列值&gt; tnion select &lt;列值&gt;<pre>
+例：insert Students (姓名,性别,出生日期)
+select '开心朋朋','男','1980/6/15' union（union表示下一行）
+select '蓝色小明','男','19\**/\*\*/\*\*'
+</pre>
 
-      <h1 class="post-title">
+</li>
+</ul>
+<h3 id="2-删"><a href="#2-删" class="headerlink" title="2.删"></a>2.删</h3><ul>
+<li>2.1【删除&lt;满足条件的&gt;行】<br>delete from &lt;表名&gt; [where &lt;删除条件&gt;]<pre>
+例：delete from a where name='开心朋朋'（删除表a中列值为开心朋朋的行）
+</pre></li>
+<li>2.2【删除整个表】<br>truncate table &lt;表名&gt;<br><pre><br>例：truncate table tongxunlu<br></pre><br>注意：删除表的所有行，但表的结构、列、约束、索引等不会被删除；不能用语有外建约束引用的表</li>
+</ul>
+<h3 id="3-改"><a href="#3-改" class="headerlink" title="3.改"></a>3.改</h3><p>update &lt;表名&gt; set &lt;列名=更新值&gt; [where &lt;更新条件&gt;]</p>
+<pre>
+例：update tongxunlu set 年龄=18 where 姓名='蓝色小名'
+</pre>
+
+<h3 id="4-查"><a href="#4-查" class="headerlink" title="4.查"></a>4.查</h3><h5 id="4-1-精确（条件）查询"><a href="#4-1-精确（条件）查询" class="headerlink" title="4.1``精确（条件）查询"></a>4.1``精确（条件）查询</h5><pre>
+select <列名> from <表名> [where <查询条件表达试>] [order by <排序的列名>[asc或desc]]
+</排序的列名></查询条件表达试></表名></列名></pre>
+- 4.1.1【查询所有数据行和列】
+<pre>
+例：select * from a
+说明：查询a表中所有行和列
+</pre>
+- 4.1.2【查询部分行列--条件查询】
+<pre>
+例：select i,j,k from a where f=5
+说明：查询表a中f=5的所有行，并显示i,j,k３列
+</pre>
+- 4.1.3【在查询中使用ＡＳ更改列名】
+<pre>
+例：select name as 姓名 from a where xingbie='男'
+说明：查询a表中性别为男的所有行，显示name列，并将name列改名为（姓名）显示
+</pre>
+- 4.1.4【查询空行】
+<pre>
+例：select name from a where email is null
+说明：查询表a中email为空的所有行，并显示name列；SQL语句中用is null或者is not null来判断是否为空行
+</pre>
+- 4.1.5【在查询中使用常量】
+<pre>
+例：select name, '唐山' as 地址 from Student
+说明：查询表a，显示name列，并添加地址列，其列值都为'唐山'
+</pre>
+- 4.1.6【查询返回限制行数(关键字：top percent)】
+<pre>
+例１：select top 6 name from a
+说明：查询表a，显示列name的前６行，top为关键字
+例２：select top 60 percent name from a
+说明：查询表a，显示列name的60%，percent为关键字
+</pre>
+- 4.1.7【查询排序（关键字：order by , asc , desc）】
+<pre>
+例：
+select name
+from a
+where chengji>=60
+order by desc
+说明：查询a表中chengji大于等于60的所有行，并按降序显示name列；默认为ＡＳＣ升序
+</pre>
+
+<h5 id="4-2-模糊查询"><a href="#4-2-模糊查询" class="headerlink" title="4.2``模糊查询"></a>4.2``模糊查询</h5><ul>
+<li>4.2.1【使用like进行模糊查询】<pre>
+注意：like运算符只用于字符串，所以仅与char和varchar数据类型联合使用
+例：select * from a where name like '赵%'
+说明：查询显示表a中，name字段第一个字为赵的记录
+</pre></li>
+<li>4.2.2【使用between在某个范围内进行查询】<pre>
+例：select * from a where nianling between 18 and 20
+说明：查询显示表a中nianling在18到20之间的记录
+</pre></li>
+<li>4.2.3【使用in在列举值内进行查询】<pre>
+例：select name from a where address in ('北京','上海','唐山')
+说明：查询表a中address值为北京或者上海或者唐山的记录，显示name字段
+</pre>
+
+</li>
+</ul>
+<h5 id="4-3-分组查询"><a href="#4-3-分组查询" class="headerlink" title="4.3``分组查询"></a>4.3``分组查询</h5><ul>
+<li>4.3.1【使用group by进行分组查询】<pre>
+例：select studentID as 学员编号,AVG(score) as 平均成绩 (注释:这里的score是列名)
+from score (注释:这里的score是表名)
+group by studentID
+说明：在表score中查询，按strdentID字段分组，显示strdentID字段和score字段的平均值；
+select语句中只允许被分组的列和为每个分组返回的一个值的表达式，例如用一个列名作为参数的聚合函数
+</pre></li>
+<li>4.3.2【使用having子句进行分组筛选】<pre>
+例：select studentID as 学员编号,AVG(score) as 平均成绩 (注释:这里的score是列名)
+from score (注释:这里的score是表名)
+group by studentID
+having count(score)>1
+说明：接上面例子，显示分组后count(score)>1的行，由于where只能在没有分组时使用，分组后只能使用having来限制条件。
+</pre>
+
+</li>
+</ul>
+<h3 id="5-创建基本表"><a href="#5-创建基本表" class="headerlink" title="5.创建基本表"></a>5.创建基本表</h3><p>create table &lt;表名&gt; (&lt;列名&gt;&lt;数据类型&gt;[列级完整性约束条件]<br>                     [,&lt;列名&gt;&lt;数据类型&gt;[列级完整性约束条件]<br>                     [,&lt;表级完整性约束条件&gt;]);</p>
+<pre>
+例：create table student  ( Sno char(5) not null unique,
+Sname char(20) unique,
+Ssex char(1),
+Sage int,
+Sdept char(15));
+</pre>
+### 6.修改基本表  
+    alert  table  <表名>  
+    [add <新列名> <数据类型> [完整性约束]]  
+    [drop <完整性约束名>]  
+    [modify <列名><数据类型>];  
+add: 用于向表中增加新列及新列相关的完整性约束条件，新的列增加成功后不带任何数据  
+drop:用于删除指定的完整性约束条件  
+modify:用于修改原来的列定义，包括修改列名和数据类型，列数据类型修改后可能会丢失原有的数据  
+<pre>
+alert table student add Scome date;
+alert table student modify Sage smallint;
+alert table student drop unique(Sname);
+</pre>
+### 7.删除基本表
+<pre>
+drop table <表名>
+</表名></pre>
+
+<h3 id="8-新建用户"><a href="#8-新建用户" class="headerlink" title="8.新建用户"></a>8.新建用户</h3><p>命令:CREATE USER ‘username’@’host’ IDENTIFIED BY ‘password’;<br>说明:username - 你将创建的用户名, host - 指定该用户在哪个主机上可以登陆,如果是本地用户可用localhost, 如果想让该用户可以从任意远程主机登陆,可以使用通配符%. password - 该用户的登陆密码,密码可以为空,如果为空则该用户可以不需要密码登陆服务器.</p>
+<pre>
+例子: CREATE USER 'dog'@'localhost' IDENTIFIED BY '123456';
+CREATE USER 'pig'@'192.168.1.101_' IDENDIFIED BY '123456';
+CREATE USER 'pig'@'%' IDENTIFIED BY '123456';
+CREATE USER 'pig'@'%' IDENTIFIED BY '';
+CREATE USER 'pig'@'%';
+</pre>
+
+<h3 id="9-用户授权"><a href="#9-用户授权" class="headerlink" title="9.用户授权"></a>9.用户授权</h3><p>命令:GRANT privileges ON databasename.tablename TO ‘username’@’host’</p>
+<p>说明: privileges - 用户的操作权限,如SELECT , INSERT , UPDATE 等.如果要授予所的权限则使用ALL.;databasename - 数据库名,tablename-表名,如果要授予该用户对所有数据库和表的相应操作权限则可用<em>表示, 如</em>.*.</p>
+<pre>
+例子: GRANT SELECT, INSERT ON test.user TO 'pig'@'%';
+GRANT ALL ON *.* TO 'pig'@'%';
+</pre>
+注意:用以上命令授权的用户不能给其它用户授权,如果想让该用户可以授权,用以下命令:
+GRANT privileges ON databasename.tablename TO 'username'@'host' WITH GRANT OPTION;
+
+### 10.设置与更改用户密码
+
+命令:SET PASSWORD FOR 'username'@'host' = PASSWORD('newpassword');如果是当前登陆用户用SET PASSWORD = PASSWORD("newpassword");
+<pre>
+例子: SET PASSWORD FOR 'pig'@'%' = PASSWORD("123456");
+
+也可：
+mysql> UPDATE user SET password=PASSWORD("new password") WHERE user='name'; 
+  mysql> FLUSH PRIVILEGES; 
+  mysql> QUIT 
+</pre>
+
+<h3 id="11-撤销用户权限"><a href="#11-撤销用户权限" class="headerlink" title="11.撤销用户权限"></a>11.撤销用户权限</h3><p>命令: REVOKE privilege ON databasename.tablename FROM ‘username’@’host’;</p>
+<p>说明: privilege, databasename, tablename - 同授权部分.</p>
+<p><pre><br>例子: REVOKE SELECT ON <em>.</em> FROM ‘pig’@’%’;<br></pre><br>注意: 假如你在给用户’pig’@’%’授权的时候是这样的(或类似的):GRANT SELECT ON test.user TO ‘pig’@’%’, 则在使用REVOKE SELECT ON <em>.</em> FROM ‘pig’@’%’;命令并不能撤销该用户对test数据库中user表的SELECT 操作.相反,如果授权使用的是GRANT SELECT ON <em>.</em> TO ‘pig’@’%’;则REVOKE SELECT ON test.user FROM ‘pig’@’%’;命令也不能撤销该用户对test数据库中user表的Select 权限.</p>
+<p>具体信息可以用命令SHOW GRANTS FOR ‘pig’@’%’; 查看.</p>
+<h3 id="12-删除用户"><a href="#12-删除用户" class="headerlink" title="12.删除用户"></a>12.删除用户</h3><p>命令: DROP USER ‘username’@’host’;</p>
+</数据类型></列名></完整性约束名></数据类型></新列名></表名>
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/09/08/python函数之神奇的参数/" itemprop="url">
-              
-                <span itemprop="name">Python函数之神奇的参数</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-08T14:05:43+08:00"
-              content="2016-09-08" >
-          09-08
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/SQL/" rel="tag">#SQL</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/09/使用js-Math-random-函数生成n到m间的随机数字/" rel="next" title="使用js Math.random()函数生成n到m间的随机数字">
+                <i class="fa fa-chevron-left"></i> 使用js Math.random()函数生成n到m间的随机数字
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -424,6 +695,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/05/08/SQL之常用操作/"
+           data-title="SQL之常用操作" data-url="http://rafa-li.github.io/2017/05/08/SQL之常用操作/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -443,8 +722,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -530,6 +818,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#问题："><span class="nav-number">1.</span> <span class="nav-text">问题：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-增"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.增</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-删"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.删</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-改"><span class="nav-number">1.0.3.</span> <span class="nav-text">3.改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-查"><span class="nav-number">1.0.4.</span> <span class="nav-text">4.查</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1-精确（条件）查询"><span class="nav-number">1.0.4.0.1.</span> <span class="nav-text">4.1``精确（条件）查询</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-2-模糊查询"><span class="nav-number">1.0.4.0.2.</span> <span class="nav-text">4.2``模糊查询</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-分组查询"><span class="nav-number">1.0.4.0.3.</span> <span class="nav-text">4.3``分组查询</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-创建基本表"><span class="nav-number">1.0.5.</span> <span class="nav-text">5.创建基本表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-新建用户"><span class="nav-number">1.0.6.</span> <span class="nav-text">8.新建用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-用户授权"><span class="nav-number">1.0.7.</span> <span class="nav-text">9.用户授权</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-撤销用户权限"><span class="nav-number">1.0.8.</span> <span class="nav-text">11.撤销用户权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-删除用户"><span class="nav-number">1.0.9.</span> <span class="nav-text">12.删除用户</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -634,6 +933,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
