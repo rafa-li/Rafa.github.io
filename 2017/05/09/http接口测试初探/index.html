@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="Rafa's Blog">
 <meta property="og:description" content="什么是接口测试接口的概念从IT的角度出发，主要是子模块或者子系统间交互并相互作用的部分。从形式上来看各种应用程序的API（最著名的Windows 系统的API），硬件的驱动程序,数据库系统的访问接口，再到后来的Webservice接口，http rest接口。虽然接口的形式各有不同，但是从测试角度来说，需要测试的内容大致是相同的，功能，性能，安全。
 什么是Http接口测试我们常说的api就是接口的">
-<meta property="og:updated_time" content="2017-05-09T06:57:28.000Z">
+<meta property="og:updated_time" content="2017-05-09T07:04:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="http接口测试初探">
 <meta name="twitter:description" content="什么是接口测试接口的概念从IT的角度出发，主要是子模块或者子系统间交互并相互作用的部分。从形式上来看各种应用程序的API（最著名的Windows 系统的API），硬件的驱动程序,数据库系统的访问接口，再到后来的Webservice接口，http rest接口。虽然接口的形式各有不同，但是从测试角度来说，需要测试的内容大致是相同的，功能，性能，安全。
@@ -486,7 +486,7 @@
 <li>6.与业务强相关的参数修改。<br>需要强调的一点就是接口测试是功能测试密不可分的一部分！各项参数都对应了数据库中的某个业务字段。需要测试人员深入到功能内部，结合业务功能进行用例设计。  </li>
 <li>7.请求消息体中的字段修改。  有些人习惯在cookie中传输某些信息，也是值得关注的测试点。  </li>
 <li>8.性能是否能满足性能需求。  </li>
-<li>9.安全方面，如对外暴露的接口，是否增加了访问限制。参数是否做了防sql注入等处理</li>
+<li>9.安全方面，如对外暴露的接口，是否增加了访问限制。参数是否做了防sql注入等处理  </li>
 </ul>
 <h2 id="Fiddler的基本介绍"><a href="#Fiddler的基本介绍" class="headerlink" title="Fiddler的基本介绍"></a>Fiddler的基本介绍</h2><p>Fiddler是最强大最好用的Web调试工具之一，它能记录所有客户端和服务器的http和https请求，允许你监视，设置断点，甚至修改输入输出数据，Fiddler包含了一个强大的基于事件脚本的子系统，并且能使用.net语言进行扩展<br>你对HTTP 协议越了解， 你就能越掌握Fiddler的使用方法. 你越使用Fiddler,就越能帮助你了解HTTP协议。Fiddler无论对开发人员或者测试人员来说，都是非常有用的工具<br>Fiddler是位于客户端和服务器端的HTTP代{过}{滤}理。它能够记录客户端和服务器之间的所有 HTTP请求，可以针对特定的HTTP请求，分析请求数据、设置断点、调试web应用、修改请求的数据，甚至可以修改服务器返回的数据，功能非常强大，是web调试的利器。<br>既然是代{过}{滤}理，也就是说：客户端的所有请求都要先经过Fiddler，然后转发到相应的服务器，反之，服务器端的所有响应，也都会先经过Fiddler然后发送到客户端，基于这个原因，Fiddler支持所有可以设置http代{过}{滤}理为127.0.0.1:8888的浏览器和应用程序。<br>Fiddler不但能截获各种浏览器发出的HTTP请求, 也可以截获各种智能手机发出的HTTP/HTTPS请求。Fiddler能捕获IOS设备发出的请求，比如IPhone, IPad, MacBook. 等等苹果的设备。同理，也可以截获Andriod，Windows Phone的等设备发出的HTTP/HTTPS。前提条件是：安装Fiddler的机器，跟Iphone 在同一个网络里， 否则IPhone 不能把HTTP发送到Fiddler的机器上来。<br>Fiddler默认是不抓取https协议的包的，需要配置一下：打开Fiddler, Tools-&gt; Fiddler Options。（配置完后记得要重启Fiddler）. 选中”Decrpt HTTPS traffic”,    Fiddler就可以截获HTTPS请求了。（iphone 上设置代理要安装证书，方法百度可查。）</p>
 
@@ -520,13 +520,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/09/web接口测试初探/" rel="next" title="http接口测试初探">
-                <i class="fa fa-chevron-left"></i> http接口测试初探
+              <a href="/2017/05/08/SQL之常用操作/" rel="next" title="SQL之常用操作">
+                <i class="fa fa-chevron-left"></i> SQL之常用操作
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/09/web接口测试初探/" rel="prev" title="http接口测试初探">
+                http接口测试初探 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
